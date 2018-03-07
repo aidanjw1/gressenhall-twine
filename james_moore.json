@@ -1,0 +1,945 @@
+{
+  "passages": [
+    {
+      "text": "This is a recreation of a typical day in the life of James Moore, master of the Gressenhall Workhouse. The decisions you make in this story will affect both your character's morality and the efficiency of the workhouse which will in turn alter the story that is told. Be thoughtful and put yourself in the shoes of James Moore! (set: $e to 0)(set: $m to 0)\n\n[[Click here to wake up -> 6:00am Awake]]",
+      "links": [
+        {
+          "name": "Click here to wake up ",
+          "link": " 6:00am Awake",
+          "pid": "2"
+        }
+      ],
+      "name": "Intro",
+      "pid": "1",
+      "position": {
+        "x": "412",
+        "y": "187"
+      }
+    },
+    {
+      "text": "The sun creeps through the windows of your quarters. A rooster crows in the distance. It's time for the workhouse to get up and running for the day, but there's a chill in the air and your blankets are oh so warm and cozy.\n\n[[Go back to sleep -> 6:15am Nap]]\n[[Wake up and get to work -> 6:15am Struggling Pauper]]",
+      "links": [
+        {
+          "name": "Go back to sleep ",
+          "link": " 6:15am Nap",
+          "pid": "3"
+        },
+        {
+          "name": "Wake up and get to work ",
+          "link": " 6:15am Struggling Pauper",
+          "pid": "4"
+        }
+      ],
+      "name": " 6:00am Awake",
+      "pid": "2",
+      "position": {
+        "x": "412",
+        "y": "337"
+      }
+    },
+    {
+      "text": "You have a leisurely nap but the efficiency of the workhouse suffers.  (set: $e to $e - 2)\n\n[[Get up and go to breakfast -> 8:00am Breakfast]]",
+      "links": [
+        {
+          "name": "Get up and go to breakfast ",
+          "link": " 8:00am Breakfast",
+          "pid": "5"
+        }
+      ],
+      "name": " 6:15am Nap",
+      "pid": "3",
+      "position": {
+        "x": "357",
+        "y": "487"
+      }
+    },
+    {
+      "text": "As you peruse the workhouse floor, you notice an elderly pauper struggling with his work. (set: $e to $e + 1)\n\n[[Tell him to get back to work -> 6:15am Motivate Elderly Pauper]]\n[[Let him take a break -> 6:15am Let Elderly Pauper Rest]]\n[[Beat him for insubordination -> 6:15am Beat Elderly Pauper]]",
+      "links": [
+        {
+          "name": "Tell him to get back to work ",
+          "link": " 6:15am Motivate Elderly Pauper",
+          "pid": "6"
+        },
+        {
+          "name": "Let him take a break ",
+          "link": " 6:15am Let Elderly Pauper Rest",
+          "pid": "7"
+        },
+        {
+          "name": "Beat him for insubordination ",
+          "link": " 6:15am Beat Elderly Pauper",
+          "pid": "8"
+        }
+      ],
+      "name": " 6:15am Struggling Pauper",
+      "pid": "4",
+      "position": {
+        "x": "488",
+        "y": "486"
+      }
+    },
+    {
+      "text": "As you enter the hall the smell of boiled onions fills your nose. It's Tuesday and the paupers dine on onion gruel. You take a seat in your chair overlooking the dining hall and you thank your lucky stars that you'll be able to eat some solid food to start your day instead of the questionable liquid in the cast iron pot.\n\n[[Say grace -> 8:00am Pray]]\n[[Dig right in -> 8:15am Pauper Complains]]",
+      "links": [
+        {
+          "name": "Say grace ",
+          "link": " 8:00am Pray",
+          "pid": "9"
+        },
+        {
+          "name": "Dig right in ",
+          "link": " 8:15am Pauper Complains",
+          "pid": "10"
+        }
+      ],
+      "name": " 8:00am Breakfast",
+      "pid": "5",
+      "position": {
+        "x": "356",
+        "y": "802"
+      }
+    },
+    {
+      "text": "\"Hey, you over there!\" you shout. \"Get back to work!\"\nThe elderly pauper sighs and puts his head back down and continues his menial task. (set: $e to $e + 1)\n\n[[Go to breakfast -> 8:00am Breakfast]]",
+      "links": [
+        {
+          "name": "Go to breakfast ",
+          "link": " 8:00am Breakfast",
+          "pid": "5"
+        }
+      ],
+      "name": " 6:15am Motivate Elderly Pauper",
+      "pid": "6",
+      "position": {
+        "x": "485",
+        "y": "622"
+      }
+    },
+    {
+      "text": "You approach the elderly pauper and put your hand on his shoulder.\n\"You look tired\" you say. \"Why don't you take a break and collect yourself before you get back to work?\"\nThe old man nods and thanks you graciously.(set: $e to $e - 1)(set: $m to $m + 1)\n\n[[Go to breakfast -> 8:00am Breakfast]]",
+      "links": [
+        {
+          "name": "Go to breakfast ",
+          "link": " 8:00am Breakfast",
+          "pid": "5"
+        }
+      ],
+      "name": " 6:15am Let Elderly Pauper Rest",
+      "pid": "7",
+      "position": {
+        "x": "614",
+        "y": "623"
+      }
+    },
+    {
+      "text": "\"Hey, you!\" you shout as you begin to walk quickly towards the old man. \"What in God's name are you doing?\" He begins to apologize but he is unable to finish his sentence before you strike him across the face with your open hand. He is shocked and cries out before you strike him once more. He collapses on the ground, whimpering. \nYou kneel next to him, furious, and loudly remind him that inefficiency will not be tolerated in the Gressenhall workhouse. He nods and quickly gets back to work. (set: $e to $e + 2) (set: $m to $m - 2)\n\n[[Go to breakfast -> 8:00am Breakfast]]",
+      "links": [
+        {
+          "name": "Go to breakfast ",
+          "link": " 8:00am Breakfast",
+          "pid": "5"
+        }
+      ],
+      "name": " 6:15am Beat Elderly Pauper",
+      "pid": "8",
+      "position": {
+        "x": "765",
+        "y": "626"
+      }
+    },
+    {
+      "text": "\"We thank you, God, for this food we are about to receive and thank you for your endless mercy upon our souls. Amen.\" (set: $m to $m + 1)\n\n[[Dig right in -> 8:30am Breakfast Ends]]",
+      "links": [
+        {
+          "name": "Dig right in ",
+          "link": " 8:30am Breakfast Ends",
+          "pid": "12"
+        }
+      ],
+      "name": " 8:00am Pray",
+      "pid": "9",
+      "position": {
+        "x": "358",
+        "y": "978"
+      }
+    },
+    {
+      "text": "As everyone begins to eat, you overhear a snide comment from a pauper, a man named Dunn.\n\"He didn't even say grace! I thought this was a Christian institution!\" (set: $e to $e - 1) (set: $m to $m - 1)\n\n[[Punish him -> 8:20am Punish Complainer]]\n[[Ignore him -> 8:30am Breakfast Ends]]",
+      "links": [
+        {
+          "name": "Punish him ",
+          "link": " 8:20am Punish Complainer",
+          "pid": "11"
+        },
+        {
+          "name": "Ignore him ",
+          "link": " 8:30am Breakfast Ends",
+          "pid": "12"
+        }
+      ],
+      "name": " 8:15am Pauper Complains",
+      "pid": "10",
+      "position": {
+        "x": "508",
+        "y": "978"
+      }
+    },
+    {
+      "text": "\"Mr. Dunn!\" you shout. His head turns. \"Come forward!\" He stands up and shuffles toward your table. \"For your act of insubordination, you will be restricted to a diet of bread and water for the next three days!\"\n\"Yes, sir\" he sighs before returning to his seat. (set: $m to $m - 1)\n\n[[Continue eating -> 8:30am Breakfast Ends]]",
+      "links": [
+        {
+          "name": "Continue eating ",
+          "link": " 8:30am Breakfast Ends",
+          "pid": "12"
+        }
+      ],
+      "name": " 8:20am Punish Complainer",
+      "pid": "11",
+      "position": {
+        "x": "488",
+        "y": "1128"
+      }
+    },
+    {
+      "text": "You and the paupers finish your respective meals.\n\n[[Back to work -> 8:35am Work]]",
+      "links": [
+        {
+          "name": "Back to work ",
+          "link": " 8:35am Work",
+          "pid": "13"
+        }
+      ],
+      "name": " 8:30am Breakfast Ends",
+      "pid": "12",
+      "position": {
+        "x": "313",
+        "y": "1251"
+      }
+    },
+    {
+      "text": "The paupers return to work.\n\n[[Supervise the paupers -> 9:00am Supervise Paupers]]\n[[Tend to your garden -> 9:00am Garden]]\n[[Prepare for your meeting with the workhouse committee -> 9:00am Prepare for Meeting]]\n[[Study the Bible -> 9:00am Bible]]",
+      "links": [
+        {
+          "name": "Supervise the paupers ",
+          "link": " 9:00am Supervise Paupers",
+          "pid": "14"
+        },
+        {
+          "name": "Tend to your garden ",
+          "link": " 9:00am Garden",
+          "pid": "15"
+        },
+        {
+          "name": "Prepare for your meeting with the workhouse committee ",
+          "link": " 9:00am Prepare for Meeting",
+          "pid": "16"
+        },
+        {
+          "name": "Study the Bible ",
+          "link": " 9:00am Bible",
+          "pid": "17"
+        }
+      ],
+      "name": " 8:35am Work",
+      "pid": "13",
+      "position": {
+        "x": "313",
+        "y": "1401"
+      }
+    },
+    {
+      "text": "The workhouse floor is uneventful as the paupers perform their daily tasks. (set: $e to $e + 1)\n\n[[Go to your meeting -> 10:00am Meeting]]",
+      "links": [
+        {
+          "name": "Go to your meeting ",
+          "link": " 10:00am Meeting",
+          "pid": "18"
+        }
+      ],
+      "name": " 9:00am Supervise Paupers",
+      "pid": "14",
+      "position": {
+        "x": "88",
+        "y": "1551"
+      }
+    },
+    {
+      "text": "Leisure is always good for the soul.\n\n[[Go to your meeting -> 10:00am Meeting]]",
+      "links": [
+        {
+          "name": "Go to your meeting ",
+          "link": " 10:00am Meeting",
+          "pid": "18"
+        }
+      ],
+      "name": " 9:00am Garden",
+      "pid": "15",
+      "position": {
+        "x": "238",
+        "y": "1551"
+      }
+    },
+    {
+      "text": "You go over the minutes of the previous meeting in addition to reading the comments from the committee on possible topics of discussion. (set: $e to $e + 2)\n\n[[Go to your meeting -> 10:00am Meeting]]",
+      "links": [
+        {
+          "name": "Go to your meeting ",
+          "link": " 10:00am Meeting",
+          "pid": "18"
+        }
+      ],
+      "name": " 9:00am Prepare for Meeting",
+      "pid": "16",
+      "position": {
+        "x": "388",
+        "y": "1551"
+      }
+    },
+    {
+      "text": "You absorb the word of the Lord like a holy sponge. You feel His spirit flow through you, reviving and refreshing you. (set: $m to $m + 1)\n\n[[Go to your meeting -> 10:00am Meeting]]",
+      "links": [
+        {
+          "name": "Go to your meeting ",
+          "link": " 10:00am Meeting",
+          "pid": "18"
+        }
+      ],
+      "name": " 9:00am Bible",
+      "pid": "17",
+      "position": {
+        "x": "538",
+        "y": "1551"
+      }
+    },
+    {
+      "text": "You are already seated in the committee chamber when the directors file in through the door. After some brief formalities, the meeting is underway. A man walks through the doorway with a man and a young girl in tow.\n\n[[Who is it? -> 10:15am Decision]]",
+      "links": [
+        {
+          "name": "Who is it? ",
+          "link": " 10:15am Decision",
+          "pid": "19"
+        }
+      ],
+      "name": " 10:00am Meeting",
+      "pid": "18",
+      "position": {
+        "x": "305",
+        "y": "1720"
+      }
+    },
+    {
+      "text": "Mr. Jordan, a benefactor of the workhouse, comes in to voice a complaint. The father of his young apprentice, Mary-Ann, is attempting to pull her out of the apprenticeship. His reasoning for this is unknown, and Mary-Ann seems to want to continue to work for Mr. Jordan.\n\n[[Talk to Mary-Ann  ->Mary-Ann's Story]]\n[[Talk to Mary-Ann's Father -> Father's Story]]\n[[Talk to Mr. Jordan -> Jordan's Story]]\n[[Give Mary-Ann back to her father -> 10:30am Return Mary-Ann]]\n[[Let Mary-Ann work -> 10:30am Let Mary-Ann Work]]\n(if: $m < 0)[[[Punish Mary-Ann for defying her father's will -> 10:30am Punish Mary-Ann]]]",
+      "links": [
+        {
+          "name": "Talk to Mary-Ann  ",
+          "link": "Mary-Ann's Story",
+          "pid": "20"
+        },
+        {
+          "name": "Talk to Mary-Ann's Father ",
+          "link": " Father's Story",
+          "pid": "21"
+        },
+        {
+          "name": "Talk to Mr. Jordan ",
+          "link": " Jordan's Story",
+          "pid": "22"
+        },
+        {
+          "name": "Give Mary-Ann back to her father ",
+          "link": " 10:30am Return Mary-Ann",
+          "pid": "23"
+        },
+        {
+          "name": "Let Mary-Ann work ",
+          "link": " 10:30am Let Mary-Ann Work",
+          "pid": "24"
+        },
+        {
+          "name": "[Punish Mary-Ann for defying her father's will ",
+          "link": " 10:30am Punish Mary-Ann",
+          "pid": "25"
+        }
+      ],
+      "name": " 10:15am Decision",
+      "pid": "19",
+      "position": {
+        "x": "304",
+        "y": "1870"
+      }
+    },
+    {
+      "text": "Mary-Ann is worried about her future. “Working this apprenticeship will give me the skills to provide a better future for our family! I don’t understand why father is against this.” \n\n[[Go back to decision screen -> 10:15am Decision]]",
+      "links": [
+        {
+          "name": "Go back to decision screen ",
+          "link": " 10:15am Decision",
+          "pid": "19"
+        }
+      ],
+      "name": "Mary-Ann's Story",
+      "pid": "20",
+      "position": {
+        "x": "705",
+        "y": "1937"
+      }
+    },
+    {
+      "text": "\"I don’t trust that man!\" says Mary-Ann’s father. \"I’m not losing another family member!\" You recall that his niece, Ann, has had to leave the workhouse due to severe illness. It’s possible he’s paranoid because of that.  \n\n[[Back to decision screen -> 10:15am Decision]]",
+      "links": [
+        {
+          "name": "Back to decision screen ",
+          "link": " 10:15am Decision",
+          "pid": "19"
+        }
+      ],
+      "name": " Father's Story",
+      "pid": "21",
+      "position": {
+        "x": "597",
+        "y": "1698"
+      }
+    },
+    {
+      "text": "“Mary-Ann is a good, honest girl. She’ll make a good wife someday.” Mr. Jordan is practical as always.\n\n[[Back to decision screen -> 10:15am Decision]]",
+      "links": [
+        {
+          "name": "Back to decision screen ",
+          "link": " 10:15am Decision",
+          "pid": "19"
+        }
+      ],
+      "name": " Jordan's Story",
+      "pid": "22",
+      "position": {
+        "x": "637",
+        "y": "1814"
+      }
+    },
+    {
+      "text": "Mr. Jordan is exasperated.\n\"I don't think I'll ever find a better apprentice than Mary-Ann!\" he exclaims as he leaves the room. Mary-Ann's father thanks you graciously and vigorously shakes your hand. Mary-Ann bursts into tears as her father takes her hand and leads her out of the room.(set: $e to $e - 1)\n\n[[Return to the meeting -> 11:00am Meeting Ends]]",
+      "links": [
+        {
+          "name": "Return to the meeting ",
+          "link": " 11:00am Meeting Ends",
+          "pid": "26"
+        }
+      ],
+      "name": " 10:30am Return Mary-Ann",
+      "pid": "23",
+      "position": {
+        "x": "149",
+        "y": "2029"
+      }
+    },
+    {
+      "text": "Mr. Jordan and Mary-Ann thank you graciously before leaving the meeting. Mary-Ann's father wipes away a tear before staring you down as he's silently escorted out of the room. (set: $e to $e + 1)\n\n[[Return to the meeting -> 11:00am Meeting Ends]]",
+      "links": [
+        {
+          "name": "Return to the meeting ",
+          "link": " 11:00am Meeting Ends",
+          "pid": "26"
+        }
+      ],
+      "name": " 10:30am Let Mary-Ann Work",
+      "pid": "24",
+      "position": {
+        "x": "288",
+        "y": "2028"
+      }
+    },
+    {
+      "text": "\"How dare you disobey your father?\" you shout. You strike Mary-Ann three times before stepping back. As you turn to walk away, she lashes out, kicking you in the back of your knee. You stumble as several staff members surround her, escorting her out of the room, kicking and screaming, followed by Mr. Jordan and her father. (set: $e to $e - 1)(set: $m to $m - 1)\n\n[[Return to the meeting -> 11:00am Meeting Ends]]",
+      "links": [
+        {
+          "name": "Return to the meeting ",
+          "link": " 11:00am Meeting Ends",
+          "pid": "26"
+        }
+      ],
+      "name": " 10:30am Punish Mary-Ann",
+      "pid": "25",
+      "position": {
+        "x": "434",
+        "y": "2024"
+      }
+    },
+    {
+      "text": "The rest of the meeting goes on without a hitch.\nAfterwards, you feel (if: $m > 0)[a refreshing sense of purpose](if: $m is 0)[drained](if: $m < 0)[annoyed]. As you walk through the halls of the workhouse, you realize you have some free time, a rare commodity in the workhouse.\n\n[[Read the Bible -> 11:30am Bible]]\n[[Check in on the elderly paupers -> 11:30am Check on Elderly Paupers]]\n[[Take a walk in the garden -> 11:30am Garden]]\n[[Find some paupers to discipline -> 11:30am Discipline Paupers]]",
+      "links": [
+        {
+          "name": "Read the Bible ",
+          "link": " 11:30am Bible",
+          "pid": "27"
+        },
+        {
+          "name": "Check in on the elderly paupers ",
+          "link": " 11:30am Check on Elderly Paupers",
+          "pid": "28"
+        },
+        {
+          "name": "Take a walk in the garden ",
+          "link": " 11:30am Garden",
+          "pid": "29"
+        },
+        {
+          "name": "Find some paupers to discipline ",
+          "link": " 11:30am Discipline Paupers",
+          "pid": "30"
+        }
+      ],
+      "name": " 11:00am Meeting Ends",
+      "pid": "26",
+      "position": {
+        "x": "307",
+        "y": "2294"
+      }
+    },
+    {
+      "text": "The word of the Lord flows through you like a magnificent river of holy water. This refreshing spiritual awakening drives you like never before to bring these paupers to the light of God from which they have strayed so far. (set: $m to $m + 2)\n\n[[Go to dinner -> 12:00pm Dinner]]",
+      "links": [
+        {
+          "name": "Go to dinner ",
+          "link": " 12:00pm Dinner",
+          "pid": "31"
+        }
+      ],
+      "name": " 11:30am Bible",
+      "pid": "27",
+      "position": {
+        "x": "82",
+        "y": "2444"
+      }
+    },
+    {
+      "text": "You decide to stop by the infirmary to check in on some of the older inmates. (if: $m >= 0)[Their faces brighten. They are flattered that you would take the time out of your busy schedule to say hello.](if: $m < 0)[They seem unhappy to see you. They avoid eye contact and only speak when spoken to.](set: $m to $m + 1)\n\n[[Go to dinner -> 12:00pm Dinner]]",
+      "links": [
+        {
+          "name": "Go to dinner ",
+          "link": " 12:00pm Dinner",
+          "pid": "31"
+        }
+      ],
+      "name": " 11:30am Check on Elderly Paupers",
+      "pid": "28",
+      "position": {
+        "x": "230",
+        "y": "2440"
+      }
+    },
+    {
+      "text": "You take a stroll through the garden and admire your handiwork while breathing the fresh air. You return to the workhouse feeling relaxed and refreshed.(set: $e to $e - 1)\n\n[[Go to dinner -> 12:00pm Dinner]]",
+      "links": [
+        {
+          "name": "Go to dinner ",
+          "link": " 12:00pm Dinner",
+          "pid": "31"
+        }
+      ],
+      "name": " 11:30am Garden",
+      "pid": "29",
+      "position": {
+        "x": "389",
+        "y": "2437"
+      }
+    },
+    {
+      "text": "You peruse the workhouse for a while, looking for troublemakers. Eventually, you approach a young boy and reprimand him for being lazy. He is confused and is soon choking back tears while you submit him to a barrage of verbal abuse. Feeling satisfied with yourself, you return to your previous duties.(set: $e to $e + 1)(set: $m to $m - 2)\n\n[[Go to dinner -> 12:00pm Dinner]]",
+      "links": [
+        {
+          "name": "Go to dinner ",
+          "link": " 12:00pm Dinner",
+          "pid": "31"
+        }
+      ],
+      "name": " 11:30am Discipline Paupers",
+      "pid": "30",
+      "position": {
+        "x": "567",
+        "y": "2444"
+      }
+    },
+    {
+      "text": "Dinner. Youtake a seat in the master's chair and say grace over the meal. While you are doing so, you hear snickering amongst a group of small children near the back of the dining room.\n\n[[Wait until you finish saying grace and then quietly reprimand them -> 12:05pm Quietly Reprimand]]\n[[Immediately scream at them from across the room -> 12:05pm Loudly Reprimand]]\n[[Let the workhouse matron deal with it later -> 12:05 Let Matron Handle It]]",
+      "links": [
+        {
+          "name": "Wait until you finish saying grace and then quietly reprimand them ",
+          "link": " 12:05pm Quietly Reprimand",
+          "pid": "32"
+        },
+        {
+          "name": "Immediately scream at them from across the room ",
+          "link": " 12:05pm Loudly Reprimand",
+          "pid": "33"
+        },
+        {
+          "name": "Let the workhouse matron deal with it later ",
+          "link": " 12:05 Let Matron Handle It",
+          "pid": "34"
+        }
+      ],
+      "name": " 12:00pm Dinner",
+      "pid": "31",
+      "position": {
+        "x": "324",
+        "y": "2613"
+      }
+    },
+    {
+      "text": "You finish saying grace and then quietly walk up to the children.\n\"I'm ashamed of you, you know? This is a Christian workhouse and you have disrespected this institution, me, and the Lord Himself by disrupting my prayer. Don't do it again.\" (set: $m to $m + 1)\n\n[[Return to your meal -> 1:00pm Dinner Ends]]",
+      "links": [
+        {
+          "name": "Return to your meal ",
+          "link": " 1:00pm Dinner Ends",
+          "pid": "35"
+        }
+      ],
+      "name": " 12:05pm Quietly Reprimand",
+      "pid": "32",
+      "position": {
+        "x": "174",
+        "y": "2763"
+      }
+    },
+    {
+      "text": "You erupt into a fiery rage. \n\"You imbeciles!\" you scream from across the room. \"You have disrespected this institution, me, and the Lord Himself by interrupting my prayer! I am the reason you have not starved to death! I am the reason you are warm at night! I refuse to be mocked in the dining room of my own workhouse! I chose to save you but I am beginning to severely regret my decision. You have lost your meal priveleges for the next two days and will receive only bread and water for a week thereafter.\" (set: $m to $m - 1)\n\n[[Eat angrily -> 1:00pm Dinner Ends]]",
+      "links": [
+        {
+          "name": "Eat angrily ",
+          "link": " 1:00pm Dinner Ends",
+          "pid": "35"
+        }
+      ],
+      "name": " 12:05pm Loudly Reprimand",
+      "pid": "33",
+      "position": {
+        "x": "324",
+        "y": "2763"
+      }
+    },
+    {
+      "text": "You ignore the children. The workhouse matron will surely punish them later on your behalf. However, they are still being distracting for the time being. (set: $e to $e - 1)\n\n[[Eat -> 1:00pm Dinner Ends]]",
+      "links": [
+        {
+          "name": "Eat ",
+          "link": " 1:00pm Dinner Ends",
+          "pid": "35"
+        }
+      ],
+      "name": " 12:05 Let Matron Handle It",
+      "pid": "34",
+      "position": {
+        "x": "474",
+        "y": "2763"
+      }
+    },
+    {
+      "text": "Those children ought to be ashamed of themselves, but, then again, the workhouse exists to correct those sorts of people. You finish your meal in silence.\n\n[[Back to work -> 1:30pm Sick Woman]]",
+      "links": [
+        {
+          "name": "Back to work ",
+          "link": " 1:30pm Sick Woman",
+          "pid": "36"
+        }
+      ],
+      "name": " 1:00pm Dinner Ends",
+      "pid": "35",
+      "position": {
+        "x": "327",
+        "y": "2962"
+      }
+    },
+    {
+      "text": "As the paupers return to work, you notice an elderly woman staggering away. She doesn't look well. \n\n[[Take her to the infirmary immediately -> 1:45 Take Woman to Infirmary]]\n[[Ignore her. The paupers can't supervise themselves, after all -> 1:45 Ignore Woman]]",
+      "links": [
+        {
+          "name": "Take her to the infirmary immediately ",
+          "link": " 1:45 Take Woman to Infirmary",
+          "pid": "37"
+        },
+        {
+          "name": "Ignore her. The paupers can't supervise themselves, after all ",
+          "link": " 1:45 Ignore Woman",
+          "pid": "38"
+        }
+      ],
+      "name": " 1:30pm Sick Woman",
+      "pid": "36",
+      "position": {
+        "x": "327",
+        "y": "3112"
+      }
+    },
+    {
+      "text": "You escort the elderly woman to the infirmary. It turns out she was on death's door. Hopefully the surgeon can make an impact.\nExhausted by this series of events, you return to your usual supervisory duties until supper. (set: $m to $m + 2)(set: $e to $e + 1)\n\n[[Go to supper -> 7:00pm Supper]]",
+      "links": [
+        {
+          "name": "Go to supper ",
+          "link": " 7:00pm Supper",
+          "pid": "39"
+        }
+      ],
+      "name": " 1:45 Take Woman to Infirmary",
+      "pid": "37",
+      "position": {
+        "x": "389",
+        "y": "3260"
+      }
+    },
+    {
+      "text": "You have more important things to worry about than some strange old lady. (set: $m to $m - 1)\n\n[[Get back to work ->1:50pm Woman Collapses]]",
+      "links": [
+        {
+          "name": "Get back to work ",
+          "link": "1:50pm Woman Collapses",
+          "pid": "40"
+        }
+      ],
+      "name": " 1:45 Ignore Woman",
+      "pid": "38",
+      "position": {
+        "x": "261",
+        "y": "3264"
+      }
+    },
+    {
+      "text": "It's 7:00pm and, more importantly, supper time. Once again, you perch yourself in you chair and say grace. As you eat, you are relieved as nothing disruptive occurs.\n\n(if: $m < 3 and $m <= $e)[[[Leave the dining hall -> Immoral Ending]]] \n(if: $e < 3 and $e <= $m)[[[Observe the paupers for a moment -> Inefficient Ending]]] \n(if: $m >= 3 and $e >= 3)[[[Leave the dining hall -> 8:00pm Crying Child]]]",
+      "links": [
+        {
+          "name": "[Leave the dining hall ",
+          "link": " Immoral Ending",
+          "pid": "44"
+        },
+        {
+          "name": "[Observe the paupers for a moment ",
+          "link": " Inefficient Ending",
+          "pid": "45"
+        },
+        {
+          "name": "[Leave the dining hall ",
+          "link": " 8:00pm Crying Child",
+          "pid": "46"
+        }
+      ],
+      "name": " 7:00pm Supper",
+      "pid": "39",
+      "position": {
+        "x": "396",
+        "y": "3899"
+      }
+    },
+    {
+      "text": "You go on your way to begin your rounds when a resounding crash suddenly echoes through the workhouse. You sprint to the spinning room, livid, only to see that it isn't the usual troublemakers but instead the elderly woman sprawled out on the ground. She's dead. The paupers are horrified. (set: $e to $e - 2)\n\n[[Scream at the paupers to get back to work -> 2:00pm Shout at Paupers]]\n[[Pray for the old woman's soul -> 2:00pm Pray]]",
+      "links": [
+        {
+          "name": "Scream at the paupers to get back to work ",
+          "link": " 2:00pm Shout at Paupers",
+          "pid": "41"
+        },
+        {
+          "name": "Pray for the old woman's soul ",
+          "link": " 2:00pm Pray",
+          "pid": "42"
+        }
+      ],
+      "name": "1:50pm Woman Collapses",
+      "pid": "40",
+      "position": {
+        "x": "261",
+        "y": "3414"
+      }
+    },
+    {
+      "text": "\"What in God's name are you all crying about?\" you say. \"She was just some old hag! Get back to work!\" The paupers begin to work again but it's clear that they are quite shaken and they work slowly. You have a group of men take the old woman's body out to the yard to be buried. (set: $e to $e - 2) (set: $m to $m - 1)\n\n[[Get back to work -> 2:30pm Work]]",
+      "links": [
+        {
+          "name": "Get back to work ",
+          "link": " 2:30pm Work",
+          "pid": "43"
+        }
+      ],
+      "name": " 2:00pm Shout at Paupers",
+      "pid": "41",
+      "position": {
+        "x": "186",
+        "y": "3564"
+      }
+    },
+    {
+      "text": "It's clear that the old woman has passed into the afterlife. Out of respect, you join the paupers in prayer as you mourn her death. Afterwards, you make preparations for a proper Christian burial. (set: $m to $m + 2)\n\n[[Get back to work -> 2:30pm Work]]",
+      "links": [
+        {
+          "name": "Get back to work ",
+          "link": " 2:30pm Work",
+          "pid": "43"
+        }
+      ],
+      "name": " 2:00pm Pray",
+      "pid": "42",
+      "position": {
+        "x": "335",
+        "y": "3564"
+      }
+    },
+    {
+      "text": "The rest of the day is the usual day-to-day workshop tedium.\n\n[[Go to supper -> 7:00pm Supper]]",
+      "links": [
+        {
+          "name": "Go to supper ",
+          "link": " 7:00pm Supper",
+          "pid": "39"
+        }
+      ],
+      "name": " 2:30pm Work",
+      "pid": "43",
+      "position": {
+        "x": "261",
+        "y": "3722"
+      }
+    },
+    {
+      "text": "The paupers have been grumbling and restless all day, much to your dismay. You swear that they are glaring at you behind your back. \n\"Ungrateful mongrels\", you mutter to yourself. \"They need to learn not to bite the hand that feeds them.\"\n\nLater that night, the matron informs you that a young man and woman have fled the workhouse together. You'll have to report this to the committee tomorrow and they will certainly not be happy.\n\n[[Go to bed -> Bad Epilogue]]",
+      "links": [
+        {
+          "name": "Go to bed ",
+          "link": " Bad Epilogue",
+          "pid": "47"
+        }
+      ],
+      "name": " Immoral Ending",
+      "pid": "44",
+      "position": {
+        "x": "396",
+        "y": "4048"
+      }
+    },
+    {
+      "text": "You see the paupers loitering about during their free hours and realize that they look about as productive now as they did when they were working. You kick yourself for not pushing them more.\n\n[[Go to bed early -> Bad Epilogue]]",
+      "links": [
+        {
+          "name": "Go to bed early ",
+          "link": " Bad Epilogue",
+          "pid": "47"
+        }
+      ],
+      "name": " Inefficient Ending",
+      "pid": "45",
+      "position": {
+        "x": "286",
+        "y": "4048"
+      }
+    },
+    {
+      "text": "As the Paupers mill out of the mess hall for free time, you witness a young child crying out for its mother. You're too weary to do much about it, although the sound breaks your heart.\n\nOnce the paupers go to bed, you have a moment to reflect. Today was exhausting but as you finish your nightly prayer, you realize that you're glad that neither your morals nor the efficiency of the workhouse was compromised in any way.\n\n(if: $e > 3 and $m > 3)[[[Go to bed -> Exemplary Ending]]] (if: $m > 3 and $e <= 3)[[[Go to bed -> Moral Ending]]] (if: $e > 3 and $m <= 3)[[[Go to bed -> Efficient Ending]]]",
+      "links": [
+        {
+          "name": "[Go to bed ",
+          "link": " Exemplary Ending",
+          "pid": "48"
+        },
+        {
+          "name": "[Go to bed ",
+          "link": " Moral Ending",
+          "pid": "49"
+        },
+        {
+          "name": "[Go to bed ",
+          "link": " Efficient Ending",
+          "pid": "50"
+        }
+      ],
+      "name": " 8:00pm Crying Child",
+      "pid": "46",
+      "position": {
+        "x": "526",
+        "y": "4048"
+      }
+    },
+    {
+      "text": "The following week, your pay is docked for mismanaging the paupers of the Gressenhall Workhouse.\n\n[[End]]",
+      "links": [
+        {
+          "name": "End",
+          "link": "End",
+          "pid": "51"
+        }
+      ],
+      "name": " Bad Epilogue",
+      "pid": "47",
+      "position": {
+        "x": "301",
+        "y": "4205"
+      }
+    },
+    {
+      "text": "The next week, the workhouse comittee gives you a commendation for your stupendous work in Gressenhall in terms of your moral fortitude and raw efficiency. It's an honor you were more than happy to accept.\n\n[[End]]",
+      "links": [
+        {
+          "name": "End",
+          "link": "End",
+          "pid": "51"
+        }
+      ],
+      "name": " Exemplary Ending",
+      "pid": "48",
+      "position": {
+        "x": "432",
+        "y": "4198"
+      }
+    },
+    {
+      "text": "Later, the bishop would commend you on the great strides you have made to help the poor. You graciously accept the honor but in your heart, the commendation means nothing. The real reward is waiting for you in the afterlife, since you have once again fulfilled your duty to God to lift up those less fortunate paupers into prosperity.\n\n[[End]]",
+      "links": [
+        {
+          "name": "End",
+          "link": "End",
+          "pid": "51"
+        }
+      ],
+      "name": " Moral Ending",
+      "pid": "49",
+      "position": {
+        "x": "554",
+        "y": "4198"
+      }
+    },
+    {
+      "text": "Soon, other workhouses in the area begin to copy your efficent tactics with their own paupers and they prosper greatly. You are renowned across the land as brilliant workhouse master.\n\n[[End]]",
+      "links": [
+        {
+          "name": "End",
+          "link": "End",
+          "pid": "51"
+        }
+      ],
+      "name": " Efficient Ending",
+      "pid": "50",
+      "position": {
+        "x": "676",
+        "y": "4198"
+      }
+    },
+    {
+      "text": "Thus ends a day in the life of James Moore.\n\n[[Intro]]",
+      "links": [
+        {
+          "name": "Intro",
+          "link": "Intro",
+          "pid": "1"
+        }
+      ],
+      "name": "End",
+      "pid": "51",
+      "position": {
+        "x": "429",
+        "y": "4383"
+      }
+    }
+  ],
+  "name": "James Moore",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.2.1",
+  "ifid": "865B4238-F1BB-47EA-BFD4-47663828441A"
+}
